@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #f2f2f2;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+.hero p {
+  font-size: 1.2em;
+}
+.btn {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ff6f61;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+  background: #fff;
+}
+.feature-box {
+  background: #eee;
+
+  text-align: center;
+  width: 10%;
+}
+.feature-box h2 {
+  margin-bottom: 10px;
+}
+.clock {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #203a43;
+  color: #fff;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.3);
+}
+.hero .container {
+  position:relative; /* bring text above overlay */
+  z-index:1;
+}
+/* .hero {
+  background-image: url('3.jpg');
+  background-size: cover;
+  background-position: left;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+} */
+
+
+.carousel-item {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.carousel-item h1,
+.carousel-item p {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-shadow: 1px 1px 6px black;
+  text-align: center;
+}
